@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Manikandan Kondappan - Portfolio</title>
+  <style>
+    /* Overall Font Styling */
+    body {
+      font-family: 'Lora', serif;
+      background-color: #f4f6f9;
+      color: #2b2b2b;
+    }
+
+    h2, h3, .navbar-brand, .nav-link {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #1e1e2f;
+    }
+    
+    .navbar .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .navbar .nav-link {
+      color: #e1e4e8;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffc107;
+    }
+
+    /* Banner Styling */
+    /* Banner Styling Fix */
+    .banner,
+    .ai-banner {
+    background-color: #2b2d42;
+    color: #ffffff;
+    padding: 3rem 1rem;
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .banner-image {
+    max-height: 300px;
+    object-fit: cover;
+    margin-right: 2rem;
+    }
+
+    .banner-text {
+    max-width: 600px;
+    text-align: left;
+    }
+
+    .ai-banner {
+    background-image: url('./src/images/AI-Physics.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    
+
+    .banner {
+      background-color: #2b2d42;
+      color: #ffffff;
+      padding: 3rem 1rem;
+    }
+
+    /* Section Headers */
+    .container h2, .container h3 {
+      color: #2b2d42;
+    }
+
+    /* Button Styling */
+    .btn-2 {
+      background-color: #ffc107;
+      color: #2b2b2b;
+      border: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-2:hover {
+      background-color: #d4a900;
+    }
+
+    /* About Section */
+    
+
+        /* About Section Fix */
+    #about .d-flex {
+    align-items: stretch;
+    }
+
+    #about .col-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    #about .col-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    #about .img-1 {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    }
+
+    #about p {
+    margin-bottom: 0;
+    }
+
+
+    
+    
+    #about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    
+    /* Contact Card Styling */
+    .contact-card {
+      background-color: #1e1e2f;
+      color: #ffffff;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 400px;
+      margin: 2rem auto;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+        /* Contact Section Fix */
+    #contact h3 {
+      color: #ffffff;
+    }
+
+    
+
+    .contact-card .icon {
+      color: #ffc107;
+      font-size: 1.5rem;
+    }
+
+    .divider {
+      border-top: 1px dashed #777;
+      margin: 1rem 0;
+    }
+
+    /* Footer styling */
+    .footer {
+      background-color: #1e1e2f;
+      color: #e1e4e8;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <section>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">Manikandan Kondappan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Kondappan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
+  <!-- Banner Section -->
+  <section class="banner text-center">
+    <div>
+      <h2>Exploring Quantum Systems, AI-driven Lab Building and</h2>
+      <h2>Discovering new Physics</h2>
+
+      <p>Welcome to Manikandan Kondappan's portfolio! Delve into a world of quantum research and AI-enabled scientific advancements. Explore how complex problems in quantum mechanics and AI are addressed through innovative research and technology.</p>
+      <div class="d-flex justify-content-center gap-4">
+        <button class="btn btn-2 px-3 rounded-2" type="submit" onclick="window.open('./src/images/PhD_THESIS_KONDAPPAN_JULY_2024_NYU_ECNU.pdf', '_blank')">
+          <img class="img-fluid me-2" src="./src/images/download.png" alt="download" height="25px" width="25px">
+          PhD Thesis
+        </button>
+        <button class="btn btn-2 px-3 rounded-2" type="submit" onclick="window.open('./src/images/Kondappan_CV.pdf', '_blank')">
+            <img class="img-fluid me-2" src="./src/images/download.png" alt="download" height="25px" width="25px">
+            Download CV
+          </button> 
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AI in Quantum Physics Banner Section -->
+  <!-- AI in Quantum Physics Banner Section -->
+
+
+
+  
+
+ <!-- About Section -->
+<section id="about" class="container">
+  <h2 class="text-center mt-5 mb-3">About Dr. Kondappan</h2>
+  <p class="text-center mb-5">Researcher in Quantum Mechanics and AI-driven Lab development and automation, with a passion for advancing quantum technology and theoretical physics.</p>
+  <div class="d-flex">
+    <div class="col-7">
+      <h3>Research Background</h3>
+      <p>Dr. Kondappan is a scientist with extensive experience in experimental quantum optics, quantum computing, and AI-driven STEM labs development. His work experiences were focused on building magneto-optical traps, preparing single atoms in optical tweezers, developing atom chips, and designing systems for quantum computation and entanglement measurements. He has expertise in optical component prototyping, light-matter interactions, and algorithmic architectures for lab development, automation, and overall building.</p>
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Doctorate in Physics</strong> (2018-2024), New York University Shanghai and East China Normal University, Shanghai. Dissertation: "Quantum non-demolition-based entanglement of cold atoms on atom chip."</li>
+        <li><strong>Master of Philosophy in Physics</strong> (2013-2014), University of Madras. Dissertation: "Qubit-Oscillator System: Analytical studies in ultra-strong coupling regime."</li>
+        <li><strong>Master of Science in Physics</strong> (2010-2012), Bharathidasan University. Project: "Wireless-quantum information processing experiment based on Swartz-Hora."</li>
+      </ul>
+    </div>
+    <div class="col-5 d-flex flex-column align-items-center">
+      <img class="img-fluid img-1 rounded-5 mb-3" src="./src/images/meinlab.jpg" alt="Manikandan Kondappan">
+      <p class="about-text"><strong>Experimental Quantum Physicist</strong> with 10+ years of laboratory experience in AMO Physics, Qubit architecture, and quantum hardware design (Single Atom, BEC qubits), Atom Chip, Dipole Traps, general and ML algorithms, and a PhD in Physics from NYU-ECNU. Previously at Raman Research Institute (RRI).</p>
+    </div>
+  </div>
+</section>
+
+
+  <head>
+    <style>
+  /* Research Section Card Styling Fix */
+#research .d-flex {
+  flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+}
+
+.large-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem; /* Adds some spacing at the bottom to avoid overlap */
+  border-radius: 12px; /* Slight rounding for a more modern aesthetic */
+  background-color: #ffffff; /* Adds a background color to separate from the dark theme */
+}
+
+.large-card-img {
+  max-height: 500px; /* Larger height for diagrams */
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
+  width: 100%;
+  border-radius: 8px; /* Adds slight rounding for aesthetics */
+  cursor: pointer; /* Indicates that the image is clickable */
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Modal Image Styling */
+.modal-body img {
+  max-width: 100%;
+  height: auto; /* Ensures the image scales correctly */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .col-4, .col-6, .col-12 {
+    flex: 0 0 100%; /* Makes each card take full width on smaller screens */
+    max-width: 100%;
+  }
+
+  .large-card {
+    padding: 1rem;
+    max-height: none; /* Removes max-height to allow flexible height on smaller screens */
+  }
+
+  .large-card-img {
+    max-height: 300px; /* Adjust image size for smaller screens */
+  }
+}
+
+/* Styling for Full Image Card */
+.card-img-full {
+  max-height: 200px; /* Limit the height to fit within the card layout */
+  object-fit: contain; /* Ensures the entire image is visible */
+  cursor: pointer; /* Indicates that the image is clickable */
+  width: 100%;
+  border-radius: 5px; /* Adds slight rounding for aesthetics */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Modal Image Styling */
+.modal-body img {
+  max-width: 100%;
+  height: auto; /* Ensures the image scales correctly */
+}
+
+    </style>
+  </head>
+  
+
+  <!-- Research Section -->
+<section id="research" class="bg-2 mt-5">
+  <div class="container">
+    <h2 class="text-center pt-4">Research</h2>
+    <p class="text-center mt-3 mb-0 fs-5">Focused on advancing quantum technology, Manikandan's research spans quantum computing, AI alignment, and cold atom physics, with an emphasis on developing experimental tools and theories in quantum information science.</p>
+    <div class="d-flex flex-wrap justify-content-center mt-4">
+      
+      <!-- Existing Cards -->
+      <div class="col-4 p-3">
+        <div class="card">
+          <img src="./src/images/miinlab.jfif" class="card-img-top" alt="Quantum Research" height="238px">
+          <div class="card-body">
+            <h5 class="card-title">Quantum Computing, Lab building and ML tools</h5>
+            <p class="card-text">Manikandan’s work includes developing quantum circuits, designing atom chips, and exploring AI-based applications in quantum information and lab automation. His research is geared toward enhancing quantum key distribution (QKD) and secure quantum networks.</p>
+            <a href="#" class="btn btn-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 p-3">
+        <div class="card">
+          <img src="./src/images/QcomputerNYU.png" class="card-img-top" alt="Cold Atom Physics">
+          <div class="card-body">
+            <h5 class="card-title">Cold Atom Physics and Quantum State Control</h5>
+            <p class="card-text">His research in cold atom physics includes work on Bose-Einstein condensates, magneto-optical traps, and atom chips. These systems are central to studying atomic interactions and developing advanced quantum computational models.</p>
+            <a href="#" class="btn btn-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 p-3">
+        <div class="card">
+          <img src="./src/images/AI-Physics.JPG" class="card-img-top" alt="AI in Quantum Physics">
+          <div class="card-body">
+            <h5 class="card-title">AI in Quantum Physics</h5>
+            <p class="card-text">Integrating artificial intelligence with quantum mechanics to push the boundaries of quantum computing, machine learning in quantum experiments, and the development of advanced quantum algorithms.</p>
+            <a href="#" class="btn btn-2">Learn More</a>
+          </div>
+        </div>
+      </div>          
+
+    <!-- New Cards Section Title -->
+<h2 class="text-center mt-5 mb-3">Key Diagrams from Recent Research</h2>
+<p class="text-center mb-5">Below are two key diagrams from my recent research work that provide visual insights into quantum experimental setups and Bose-Einstein condensates.</p>
+
+<!-- New Cards for Diagrams with Prominent View -->
+<div class="col-12 p-4">
+  <div class="large-card">
+    <div class="card-body text-center">
+      <img src="./src/images/circuit.png" class="large-card-img" alt="Optical Circuit Diagram" data-bs-toggle="modal" data-bs-target="#circuitModal">
+      <h5 class="card-title mt-3">Optical Circuit Compactification</h5>
+      <h6 class="card-subtitle mb-3 text-muted">Design of Optical Circuits for Efficient Quantum Experiments</h6>
+      <p class="card-text">A detailed diagram showing the compactification of optical circuits for ultracold atoms, as part of the research on efficient optical designs for quantum experiments. This helps in minimizing space requirements and optimizing light-matter interactions for better control over quantum states. DOI: <a href="https://doi.org/10.1063/5.0180938" target="_blank">10.1063/5.0180938</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 p-4">
+  <div class="large-card">
+    <div class="card-body text-center">
+      <img src="./src/images/elevels.png" class="large-card-img" alt="Energy Levels Diagram" data-bs-toggle="modal" data-bs-target="#elevelsModal">
+      <h5 class="card-title mt-3">Energy Levels for Ultracold Atoms</h5>
+      <h6 class="card-subtitle mb-3 text-muted">Rubidium-87 BEC and BEC Entanglement on an Atom Chip</h6>
+      <p class="card-text">This diagram illustrates the energy levels of <sup>87</sup>Rb Bose-Einstein Condensate (BEC) and BEC entanglement on an atom chip, used in the study of light-matter interactions. It is critical for understanding how to manipulate quantum states of Rubidium atoms for experiments in quantum entanglement and computing. DOI: <a href="https://doi.org/10.1063/5.0180938" target="_blank">10.1063/5.0180938</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for Circuit Diagram -->
+<div class="modal fade" id="circuitModal" tabindex="-1" aria-labelledby="circuitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="circuitModalLabel">Optical Circuit Compactification</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./src/images/circuit.png" class="img-fluid" alt="Optical Circuit Diagram">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Energy Levels Diagram -->
+<div class="modal fade" id="elevelsModal" tabindex="-1" aria-labelledby="elevelsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="elevelsModalLabel">Energy Levels for Ultracold Atoms</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./src/images/elevels.png" class="img-fluid" alt="Energy Levels Diagram">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2 class="text-center mt-4 mb-0">Projects</h2>
+    <p class="text-center mt-3 mb-0 fs-5">Showcasing theoretical physics, quantum computing, and artificial intelligence projects, including applications in laboratory automation and quantum information science.</p>
+    <ul>
+      <li><strong>Quantum ML Agents:</strong> Designed Deep Q-Networks (DQN) for use in AI-driven quantum experiments at NYU Shanghai.</li>
+      <li><strong>QKD and Autonomous Optimization:</strong> Project consultant for QKD setups and design of autonomous optimization in single-mode fiber systems at IITM's PRAVATA startup incubation lab.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container d-flex justify-content-center align-items-center my-5">
+    <div class="contact-card text-center">
+      <h3 class="mb-4">Contact Kondappan</h3>
+      <div class="info">
+        <i class="bi bi-geo-alt-fill icon"></i>
+        <p>Shanghai, China</p>
+      </div>
+      <div class="divider"></div>
+      <div class="info">
+        <i class="bi bi-telephone-fill icon"></i>
+        <p>+86 135 6481 6731</p>
+      </div>
+      <div class="divider"></div>
+      <div class="info">
+        <i class="bi bi-envelope-fill icon"></i>
+        <p>manikandan.unom@gmail.com</p>
+      </div>
+      <div class="divider"></div>
+      <div class="info">
+        <i class="bi bi-globe icon"></i>
+        <p>https://mani-rri.github.io/kondappan/</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Manikandan Kondappan. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Icons and JS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
